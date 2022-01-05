@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc7684a651.js" crossorigin="anonymous"></script>
 
   <body>
     <header>
@@ -30,10 +31,11 @@
         <div class="banner-left">
           <h1>Conheça o JurisHunter</h1>
           <p>O bot que traz atualizações de jurisprudência para o seu servidor do Discord.</p>
+          <a href="#"><button type="button" name="button">Saiba mais</button></a>
         </div>
 
         <div class="banner-right">
-          <a href="#"><button type="button" name="button">Saiba mais</button></a>
+          <img src="./img/header-image.svg" alt="JurisHunter">
         </div>
       </div>
     </header>
@@ -45,56 +47,63 @@
       </section>
 
       <section id="features">
-        <h2>Features</h2>
-        <div class="feature-list">
-          <h3>Sincronização automática</h3>
-          <p>Receba as atualizações no seu servidor quase em tempo real, assim que os tribunais publicarem.</p>
-        </div>
+        <div class="features-container">
+          <h2>Features</h2>
+          <div class="feature-list">
+            <i class="fas fa-sync"></i>
+            <h3>Sincronização automática</h3>
+            <p>Receba as atualizações no seu servidor quase em tempo real, assim que os tribunais publicarem.</p>
+          </div>
 
-        <div class="feature-list">
-          <h3>Filtragem de atualizações por período</h3>
-          <p>Utilize os comandos <kbd>!daily</kbd>, <kbd>!weekly</kbd> e <kbd>!monthly</kbd> para obter as atualizações de um determinado período.</p>
-        </div>
+          <div class="feature-list">
+            <i class="fas fa-calendar-day"></i>
+            <h3>Filtragem de atualizações por período</h3>
+            <p>Utilize os comandos <kbd>!daily</kbd>, <kbd>!weekly</kbd> e <kbd>!monthly</kbd> para obter as atualizações de um determinado período.</p>
+          </div>
 
-        <div class="feature-list">
-          <h3>Lembretes de estudo</h3>
-          <p>Além de te manter atualizado, o JurisHunter ainda te chama no PV para estudar a jurisprudência com a frequência que você desejar.</p>
+          <div class="feature-list">
+            <i class="fas fa-user-clock"></i>
+            <h3>Lembretes de estudo</h3>
+            <p>Além de te manter atualizado, o JurisHunter ainda te chama no PV para estudar a jurisprudência com a frequência que você desejar.</p>
+          </div>
         </div>
       </section>
 
       <section id="instalar">
         <h2>Instalação</h2>
         <p>Clique no botão abaixo para adicionar o JurisHunter no seu servidor do Discord:</p>
-        <a href="#"><button type="button" name="button">Instale agora</button></a>
+        <a href="#"><button type="button" name="button">Instale agora <i class="fab fa-discord"></i></button></a>
       </section>
 
       <section id="suporte">
-        <h2>Suporte</h2>
-        <p>Caso tenha alguma dúvida, problema ou sugestão relacionados ao JurisHunter, contate-nos através do formulário abaixo:</p>
-        <form class="" action="index.html" method="post">
-          <label for="user_name">Seu nome:</label>
-          <input type="text" id="Nome" name="user_name" value="">
+        <div class="suporte-container">
+          <h2>Suporte</h2>
+          <p>Caso tenha alguma dúvida, problema ou sugestão relacionados ao JurisHunter, contate-nos através do formulário abaixo:</p>
+          <form class="" action="index.html" method="post">
+            <label for="user_name">Seu nome:</label>
+            <input type="text" id="Nome" name="user_name" value="">
+            <br>
+            <label for="user_email">Seu e-mail:</label>
+            <input type="email" id="Email" name="user_email" value="" required="yes" autocomplete="on">
+            <br>
+            <fieldset>
+              <label for="user_subject">Assunto:</label>
+              <input type="radio" name="user_subject" id="sugestao" value="sugestao">
+              <label for="sugestao">Sugestão</label>
 
-          <label for="user_email">Seu e-mail:</label>
-          <input type="email" id="Email" name="user_email" value="" required="yes" autocomplete="on">
+              <input type="radio" name="user_subject" id="duvida" value="duvida">
+              <label for="duvida">Dúvida</label>
 
-          <fieldset>
-            <label for="user_subject">Assunto:</label>
-            <input type="radio" name="user_subject" id="sugestao" value="sugestao">
-            <label for="sugestao">Sugestão</label>
+              <input type="radio" name="user_subject" id="problema" value="problema">
+              <label for="problema">Problema</label>
+            </fieldset>
+            
+            <label for="user_msg">Sua mensagem:</label>
+            <textarea id="Mensagem" name="user_msg" rows="8" cols="80" required="yes"></textarea>
 
-            <input type="radio" name="user_subject" id="duvida" value="duvida">
-            <label for="duvida">Dúvida</label>
-
-            <input type="radio" name="user_subject" id="problema" value="problema">
-            <label for="problema">Problema</label>
-          </fieldset>
-
-          <label for="user_msg">Sua mensagem:</label>
-          <textarea id="Mensagem" name="user_msg" rows="8" cols="80" required="yes"></textarea>
-
-          <input type="submit" name="enviar" value="Enviar">
-        </form>
+            <input type="submit" name="enviar" value="Enviar">
+          </form>
+        </div>
       </section>
     </main>
 
