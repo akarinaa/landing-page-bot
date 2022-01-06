@@ -2,6 +2,9 @@
  Projeto de landing page seguindo o tutorial em vídeo da Rafaella Ballerini.
 
  [Live Demo](https://akarinaa.github.io/landing-page-bot/)
+ 
+ 
+![](./screenshot-desktop.png)
 
 ## índice
  ==================
