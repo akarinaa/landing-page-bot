@@ -1,7 +1,7 @@
 # landing-page-bot
  Projeto de landing page seguindo o tutorial em vídeo da Rafaella Ballerini.
 
- [Live Demo](#)
+ [Live Demo](https://akarinaa.github.io/landing-page-bot/)
 
 ## índice
  ==================
