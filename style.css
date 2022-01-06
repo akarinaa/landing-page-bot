@@ -53,6 +53,13 @@ input[type="text"], input[type="email"], textarea {
   border-radius: 10px;
 }
 
+kbd {
+  background: #444;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
 header {
   background-image: linear-gradient(135deg, #1d2b57, #10162b);
   color: #eee;
@@ -88,7 +95,6 @@ header {
 }
 
 .header-banner img {
-  width: 95%;
   max-width: 350px;
 }
 
@@ -175,4 +181,30 @@ footer {
   border-top: 1px solid #222840;
   padding: 15px;
   font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .header-banner {
+    grid-template-columns: auto;
+    grid-gap: 50px;
+    text-align: center;
+  }
+
+  #suporte input[type="text"], #suporte input[type="email"], #suporte textarea {
+    width: 95%;
+  }
+
+  #suporte fieldset {
+    width: 93%;
+  }
+
+  .top-bar {
+    flex-direction: column;
+  }
+
+  .top-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
